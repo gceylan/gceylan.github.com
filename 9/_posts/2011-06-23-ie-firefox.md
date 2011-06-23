@@ -6,7 +6,7 @@ title: Microsoft'un Mozilla'ya yolladığı IE pastası
 Microsoft, Firefox 5'in yayınlanmasını Firefox geliştiricilerine bir pasta
 göndererek kutladı.
 
-![resim](https://github.com/gceylan/file/ie-firefox.png)
+![resim](https://github.com/gceylan/file/blob/master/ie-firefox.png)
 
 Pastanın içeriği tam olarak bilinmese de bir takım söylentilere göre oldukça
 lezzetli(:-)). Microsoft'un artık gelenek halini alan bu jesti her yeni Firefox
