@@ -4,7 +4,7 @@ title: PHP' nin doğuşu
 ---
 
 
-	Rasmus Lerdorf, tarihin ilk dönemlerinde yani Internet'in henüz yayıldığı
+Rasmus Lerdorf, tarihin ilk dönemlerinde yani Internet'in henüz yayıldığı
 1990'ların
 ortalarına doğru iş arıyordu; hayat öyküsünü bir kişisel sayfada yayınlamak ve
 başvuracağı yerlere bu sayfanın adresini verebileceğini düşündü. Fakat o dönemde
