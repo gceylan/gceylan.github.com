@@ -31,4 +31,4 @@ ettirir ve yeni duruma geçer. Makine, yeni durum ve kafanın okuduğu yeni semb
 ile çalışmaya devam edecektir.<br />
 -->Eğer öyle bir girdi bulamaz ise, durur.<br />
 <img
-src="https://github.com/gceylan/gceylan.github.com/blob/master/images/turing_makinesi.jpg">
+src="https://github.com/gceylan/gceylan.github.com/blob/master/images/turing_makinesi.jpg?raw=true" >
