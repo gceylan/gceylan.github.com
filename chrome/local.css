@@ -8,3 +8,11 @@ layout: nil
  * =============================================================================
  */
 
+body {
+	background-color: #2A2A2A;
+}
+
+.site {
+	background-color: #F2F1F0;
+	border: 1px solid #FFF;
+}
