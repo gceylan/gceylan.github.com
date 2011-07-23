@@ -29,6 +29,6 @@ adımda:<br /></p>
 -->Eğer öyle bir girdi bulursa, yazılacak sembolü yazar veya kafasını hareket
 ettirir ve yeni duruma geçer. Makine, yeni durum ve kafanın okuduğu yeni sembol
 ile çalışmaya devam edecektir.<br />
--->Eğer öyle bir girdi bulamaz ise, durur.<br />
+-->Eğer öyle bir girdi bulamaz ise, durur.<br /><br />
 <img
 src="https://github.com/gceylan/gceylan.github.com/blob/master/images/turing_makinesi.jpg?raw=true" >
