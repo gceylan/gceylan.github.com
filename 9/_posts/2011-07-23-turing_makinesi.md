@@ -23,12 +23,12 @@ niteliğindeydi. İşte bu makalelerde sözü geçen sanal makine daha sonralar�
 <p>Bu tablo, o Turing makinesinin çalıştırdığı algoritmadır. Turing makinesi, her
 adımda:<br /></p>
 
--->O anda kafanın görmekte olduğu sembolü okur.<br />
--->Geçiş tablosunda okuduğu sembol ve o anki durumunu içeren bir girdi arar:<br
+--> O anda kafanın görmekte olduğu sembolü okur.<br />
+--> Geçiş tablosunda okuduğu sembol ve o anki durumunu içeren bir girdi arar:<br
 />
--->Eğer öyle bir girdi bulursa, yazılacak sembolü yazar veya kafasını hareket
+--> Eğer öyle bir girdi bulursa, yazılacak sembolü yazar veya kafasını hareket
 ettirir ve yeni duruma geçer. Makine, yeni durum ve kafanın okuduğu yeni sembol
 ile çalışmaya devam edecektir.<br />
--->Eğer öyle bir girdi bulamaz ise, durur.<br /><br />
+--> Eğer öyle bir girdi bulamaz ise, durur.<br /><br />
 <img src="https://github.com/gceylan/gceylan.github.com/blob/master/images/turing_makinesi.jpg?raw=true" ><br />
 Nasıl çalıştığını merak ettiyseniz <a href="http://www.youtube.com/watch?v=E3keLeMwfHY">buradan</a> izleyebilirsiniz.
