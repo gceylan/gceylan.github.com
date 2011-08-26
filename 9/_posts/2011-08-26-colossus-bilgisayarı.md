@@ -45,5 +45,4 @@ title: Colossus Mark II Bilgisayarı
     Newman başkanlığındaki Lorenz makinesi çözümleme metotları bölümü tarafından
     çalıştırılmaktaydı.</p>
 
-    <a href="http://www.youtube.com/watch?v=O8WXNPn1QKo">İşte </a>Colossus
-    Bilgisayarı.
+<a href="http://www.youtube.com/watch?v=O8WXNPn1QKo">İşte </a>Colossus Bilgisayarı.
