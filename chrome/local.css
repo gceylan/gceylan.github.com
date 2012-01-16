@@ -7,19 +7,38 @@ layout: nil
  * Siteye özel Baz CSS
  * =============================================================================
  */
-
-body {
-	background-color: #0C0C0C;
-	background-image: url(../chrome/background/back_2.jpg);
-	background-repeat: no-repeat;
-	background-position: right 5px;
+ 
+ html {
+    background-color: #f1f1f1;
 }
 
 .site {
-	background-color: #F2F1F0;
-	border: 1px solid #FFF;
+    background: #fff;
+    margin:4em auto 4em;
+    width:900px;
+    padding:2em;
+    border: 1px solid #ddd;
+    box-shadow: #333 0px 0px 18px;  
+    -moz-box-shadow: #333 0px 0px 18px;  
+    -webkit-box-shadow: #333 0px 0px 18px;
+    -moz-border-radius: 1em;
+    -webkit-border-radius: 1em;
+}
+
+a {
+    text-decoration: none;
+    color: #151B8D;
+}
+
+a:visited {
+    color: #333;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #333;
 }
 
 .ribbon a {
-	border: 0px;
+    color: #fff;
 }
