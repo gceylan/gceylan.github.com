@@ -8,6 +8,12 @@ layout: nil
  * =============================================================================
  */
  
+/* 
+ * =============================================================================
+ * Siteye özel Baz CSS
+ * =============================================================================
+ */
+ 
 html {
     background-color: #f1f1f1;
 }
@@ -26,17 +32,27 @@ html {
 }
 
 a {
+    color: #153E7E;
     text-decoration: none;
-    color: #151B8D;
-}
-
-a:visited {
-    color: #333;
 }
 
 a:hover {
-    text-decoration: underline;
-    color: #333;
+    text-decoration: none;
+    color: #1589FF;
+    transition: color .2s ease-in 0;
+    -moz-transition-property: color;
+    -moz-transition-timing-function: ease-in;
+    -moz-transition-duration: .2s;
+    -moz-transition-delay: 0;
+    -webkit-transition-property: color;
+    -webkit-transition-timing-function: ease-in;
+    -webkit-transition-duration: .2s;
+    -webkit-transition-delay: 0;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #1589FF;
 }
 
 .ribbon a {
@@ -47,6 +63,7 @@ a:hover {
     margin: 0 0 5px;
     border: 1px solid #ccc;
     border-color: rgba(0,0,0,.25);
+    -moz-border-radius: 5px;
 }
 
 #logo:hover {
