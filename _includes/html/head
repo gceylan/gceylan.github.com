@@ -1,7 +1,7 @@
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
   <meta name="author" content="{{ site.param.fullname }}" />
-  <meta name=”keywords” content=”gökhan ceylan, gceylan, gokhanceylan”>
+  <meta name="keywords" content="gökhan ceylan, gceylan, gokhanceylan">
   {% if page.moved %}
   <meta http-equiv="refresh" content="3; url=http://{{ page.moved }}">
   {% endif %}
@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="{{ site.url }}/chrome/site.css"   type="text/css" media="screen, projection" />
   <link rel="stylesheet" href="{{ site.url }}/chrome/syntax.css" type="text/css" />
   <link rel="stylesheet" href="{{ site.url }}/chrome/local.css"  type="text/css" media="screen, projection" />
+  
   <script type="text/javascript" src="jquery-1.3.2.min.js"></script>
   <script type="text/javascript">
 	  $(document).ready(function() {
