@@ -60,17 +60,30 @@ a:visited {
 }
 
 #logo {
+	clear:both;
+	position:relative;
+	display:block;
+	height:128px;
+	width:128px;
+	background:url("images/19-normal-128x128.png") no-repeat;
+	background-position:0 0;
+	cursor:pointer;
     margin: 0 0 5px;
     border: 1px solid #ccc;
-    border-color: rgba(0,0,0,.25);
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-}
-
-#logo:hover {
-    border-color: rgba(0,0,0,.50);
+	border-color: rgba(0,0,0,.50);
     -moz-border-radius: 5px;
     -moz-box-shadow: 0 1px 3px rgba(0,0,0,.50);
     -webkit-border-radius: 5px;
     -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.50);
+}
+
+#logo span.hover {
+	position: absolute;
+	display: block;
+	height: 128px;
+	width: 128px;
+	background: url("images/19-altnegative-128x128.png") no-repeat;
+	background-position: bottom;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
 }
