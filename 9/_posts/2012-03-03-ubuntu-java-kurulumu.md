@@ -22,14 +22,14 @@ Aşağıdaki komutu girelim ve `jdk1.7.0` olan seçimi seçip entere basalım.
 	$ sudo update-alternatives --config java
 
 ![Resim1][1]
-[1]: https://github.com/gceylan/gceylan.github.com/raw/master/images/confing.png
+[1]: http://github.com/gceylan/gceylan.github.com/raw/master/images/confing.png
 
 Buraya kadar uyguladığımız işlemler sonucunda `Java`yı ve `Javac` derleyicisini
 kurduk. Komut satırına `java -version` yazarsak resimdeki çıktıya ulaşmış
 olmalıyız:
 
 ![Resim2][1]
-[1]: https://github.com/gceylan/gceylan.github.com/raw/master/images/java_version.png
+[1]: http://github.com/gceylan/gceylan.github.com/raw/master/images/java_version.png
 
 **Tarayıcılar için ek adımlar**
 
