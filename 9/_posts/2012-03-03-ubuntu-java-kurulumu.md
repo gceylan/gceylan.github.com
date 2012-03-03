@@ -51,4 +51,4 @@ Sisteminiz 32 bit ise:
 	$ ln -s /usr/lib/jvm/jdk1.7.0/jre/lib/amd64/libnpjp2.so ~/.mozilla/plugins/
 
 Bu kadar yükleme yaptıktan sonra ilk java uygulamsını yapmadan gitmek olmaz.
-[Buradan buyrun.](http://gceylan.github.com)
+[Buradan buyrun.](http://gceylan.github.com/903/ilk-java/)
