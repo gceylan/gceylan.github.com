@@ -21,14 +21,14 @@ Aşağıdaki komutu girelim ve `jdk1.7.0` olan seçimi seçip entere basalım.
 
 	$ sudo update-alternatives --config java
 
-![Resim][1]
+![Resim1][1]
 [1]: https://github.com/gceylan/gceylan.github.com/raw/master/images/confing.png
 
 Buraya kadar uyguladığımız işlemler sonucunda `Java`yı ve `Javac` derleyicisini
 kurduk. Komut satırına `java -version` yazarsak resimdeki çıktıya ulaşmış
 olmalıyız:
 
-![Resim][1]
+![Resim2][1]
 [1]: https://github.com/gceylan/gceylan.github.com/raw/master/images/java_version.png
 
 **Tarayıcılar için ek adımlar**
@@ -51,4 +51,4 @@ Sisteminiz 32 bit ise:
 	$ ln -s /usr/lib/jvm/jdk1.7.0/jre/lib/amd64/libnpjp2.so ~/.mozilla/plugins/
 
 Bu kadar yükleme yaptıktan sonra ilk java uygulamsını yapmadan gitmek olmaz.
-[Buradan buyrun.](https://gceylan.github.com)
+[Buradan buyrun.](http://gceylan.github.com)
