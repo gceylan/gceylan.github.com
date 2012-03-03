@@ -28,8 +28,8 @@ Buraya kadar uyguladığımız işlemler sonucunda `Java`yı ve `Javac` derleyic
 kurduk. Komut satırına `java -version` yazarsak resimdeki çıktıya ulaşmış
 olmalıyız:
 
-![Resim2][1]
-[1]: http://github.com/gceylan/gceylan.github.com/raw/master/images/java_version.png
+![Resim2][2]
+[2]: http://github.com/gceylan/gceylan.github.com/raw/master/images/java_version.png
 
 **Tarayıcılar için ek adımlar**
 
