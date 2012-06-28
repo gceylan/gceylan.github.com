@@ -1,16 +1,12 @@
----
-layout: nil
----
-
 /* 
  * =============================================================================
- * Siteye Ã¶zel Baz CSS
+ * Siteye özel Baz CSS
  * =============================================================================
  */
  
 /* 
  * =============================================================================
- * Siteye Ã¶zel Baz CSS
+ * Siteye özel Baz CSS
  * =============================================================================
  */
  
@@ -23,17 +19,15 @@ html {
     margin:4em auto 4em;
     width:900px;
     padding:2em;
-    border: 1px solid #ddd;
-    box-shadow: #333 0px 0px 18px;  
-    -moz-box-shadow: #333 0px 0px 18px;  
-    -webkit-box-shadow: #333 0px 0px 18px;
-    -moz-border-radius: 1em;
-    -webkit-border-radius: 1em;
+    border: 1px solid #ccc;
+    box-shadow: #ccc 0px 0px 10px;
+    border-radius: 15px;
 }
 
 a {
     color: #153E7E;
     text-decoration: none;
+    text-shadow: 0.5px 0.5px 1px #999;
 }
 
 a:hover {
@@ -68,13 +62,10 @@ a:visited {
 	background:url("/chrome/19/19-normal-128x128.png") no-repeat;
 	background-position:0 0;
 	cursor:pointer;
-    margin: 0 0 5px;
-    border: 1px solid #ccc;
+        margin: 0 0 5px;
+        border: 1px solid #ccc;
 	border-color: rgba(0,0,0,.50);
-    -moz-border-radius: 5px;
-    -moz-box-shadow: 0 1px 3px rgba(0,0,0,.50);
-    -webkit-border-radius: 5px;
-    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.50);
+        border-radius: 5px;
 }
 
 #logo span.hover {
@@ -84,6 +75,4 @@ a:visited {
 	width: 128px;
 	background: url("/chrome/19/19-altnegative-128x128.png") no-repeat;
 	background-position: bottom;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
 }
