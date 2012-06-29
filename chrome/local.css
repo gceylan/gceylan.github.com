@@ -1,12 +1,12 @@
 /* 
  * =============================================================================
- * Siteye Özel Baz CSS
+ * Siteye ýzel Baz CSS
  * =============================================================================
  */
  
 /* 
  * =============================================================================
- * Siteye Özel Baz CSS
+ * Siteye ýzel Baz CSS
  * =============================================================================
  */
  
@@ -62,11 +62,11 @@ a:visited {
 	background:url("/chrome/19/19-normal-128x128.png") no-repeat;
 	background-position:0 0;
 	cursor:pointer;
-        margin: 0 0 5px;
-        border: 1px solid #A5A5A5;
+	margin: 0 0 5px;
+    	border: 1px solid #A5A5A5;
 	border-color: rgba(0,0,0,.50);
-        border-radius: 10px;
-        box-shadow: #A4A4A4 0px 0px 2px;
+	border-radius: 10px;
+	box-shadow: #A4A4A4 0px 0px 2px;
 }
 
 #logo span.hover {
@@ -77,4 +77,19 @@ a:visited {
 	background: url("/chrome/19/19-altnegative-128x128.png") no-repeat;
 	background-position: bottom;
         border-radius: 10px;
+}
+#post pre, #post code {
+	border: 1px solid #DDD;
+	background-color: #EEF;
+	padding: 0 .4em;
+}
+
+#post pre:hover {
+	background-color: #EEF;
+        -webkit-box-shadow: inset 0px 1px 2px rgba(0,0,0,0.2);
+	-moz-box-shadow: inset 0px 1px 2px rgba(0,0,0,0.2);
+	box-shadow: inset 0px 1px 2px rgba(0,0,0,0.1);
+	border:1px solid #d1d1d1;
+        text-shadow: 1px 1px 1px #999;        
+        padding: 0 .4em;
 }
