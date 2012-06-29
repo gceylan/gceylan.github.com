@@ -1,12 +1,12 @@
 /* 
  * =============================================================================
- * Siteye özel Baz CSS
+ * Siteye Özel Baz CSS
  * =============================================================================
  */
  
 /* 
  * =============================================================================
- * Siteye özel Baz CSS
+ * Siteye Özel Baz CSS
  * =============================================================================
  */
  
@@ -19,8 +19,8 @@ html {
     margin:4em auto 4em;
     width:900px;
     padding:2em;
-    border: 1px solid #ccc;
-    box-shadow: #ccc 0px 0px 10px;
+    border: 1px solid #A4A4A4;
+    box-shadow: #A4A4A4 0px 0px 10px;
     border-radius: 15px;
 }
 
@@ -63,9 +63,10 @@ a:visited {
 	background-position:0 0;
 	cursor:pointer;
         margin: 0 0 5px;
-        border: 1px solid #ccc;
+        border: 1px solid #A5A5A5;
 	border-color: rgba(0,0,0,.50);
-        border-radius: 5px;
+        border-radius: 10px;
+        box-shadow: #A4A4A4 0px 0px 2px;
 }
 
 #logo span.hover {
@@ -75,4 +76,5 @@ a:visited {
 	width: 128px;
 	background: url("/chrome/19/19-altnegative-128x128.png") no-repeat;
 	background-position: bottom;
+        border-radius: 10px;
 }
