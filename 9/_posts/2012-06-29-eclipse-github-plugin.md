@@ -1,9 +1,8 @@
 ---
 layout: post
-title: ubuntu-eclipse kurulumu
+title: ubuntu - eclipse kurulumu
 ---
 
-### Ubuntu-Eclipse Kurulumu
 
 Eclipse, `IBM` tarafından 2001 yılında geliştirilmeye başlanmış ve şu anda açık
 kaynak kod bünyesinde gelişimini sürdüren bir tümleşik geliştirme ortamıdır.
