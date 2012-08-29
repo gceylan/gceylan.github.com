@@ -11,7 +11,6 @@
   <link rel="stylesheet" href="{{ site.url }}/chrome/site.css"   type="text/css" media="screen, projection" />
   <link rel="stylesheet" href="{{ site.url }}/chrome/syntax.css" type="text/css" />
   <link rel="stylesheet" href="{{ site.url }}/chrome/local.css"  type="text/css" media="screen, projection" />
-  <link rel="stylesheet" href="{{ site.url }}/chrome/bootstrap.css"  type="text/css" media="screen, projection" />
   
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
   <script type="text/javascript">
