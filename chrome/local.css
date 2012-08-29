@@ -2,16 +2,12 @@ html {
     background-color: #f1f1f1;
 }
 
-.x {
-	margin-left: -200px;
-}
-
 .site {
   background: #fff;
-  margin: 0 auto;
+  margin: 4em auto 4em;
   width:900px;
   height:auto;
-  padding: 50px;
+  padding: 2em;
   text-align: justify;
   /* border-radius */
   -webkit-border-radius: 5px;
