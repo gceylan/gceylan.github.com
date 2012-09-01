@@ -2,15 +2,14 @@
 <!-- Archive start -->
 <div id="related">
   <h2>{{ site.param.archive }}</h2>
-  <ul class="posts">
+  <table class="table">
     {% for post in site.posts limit:30 %}
-      <li>
-	<span>{{ post.date | date: '%Y-%m-%d' }}</span>
-	&nbsp;&raquo;&nbsp;&nbsp;
-	<a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
-      </li>
+      <tr>
+		<td><span>{{ post.date | date: '%Y-%m-%d' }}</span></td>
+		<td><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></td>
+      </tr>
     {% endfor %}
-  </ul>
+  </table>
 </div>
 <!-- Archive end -->
 {% endunless %}
