@@ -13,17 +13,21 @@
   <link rel="stylesheet" href="{{ site.url }}/chrome/local.css"  type="text/css" media="screen, projection" />
   
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+  
   <script type="text/javascript">
-	  $(document).ready(function() {
-		  $('#logo').append('<span class="hover"></span>').each(function () {
-	  		  var $span = $('> span.hover', this).css('opacity', 0);
-	  		  $(this).hover(function () {
-	    		  $span.stop().fadeTo(500, 1);
-	 		  }, function () {
-	   	  $span.stop().fadeTo(500, 0);
-	  		  });
-		  });
-	  });
+	$(document).ready(function() {
+		
+		$(".table tr:even").addClass('table_hover');
+		
+		$('#logo').append('<span class="hover"></span>').each(function () {
+	  		var $span = $('> span.hover', this).css('opacity', 0);
+	  		$(this).hover(function () {
+	    		$span.stop().fadeTo(500, 1);
+	 		}, function () {
+				$span.stop().fadeTo(500, 0);
+	  		});
+		});
+	});
   </script>
 
 </head>

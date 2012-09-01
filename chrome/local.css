@@ -94,3 +94,28 @@ a:visited {
 	text-shadow: 1px 1px 1px #999;        
 	padding: 0 .4em;
 }
+
+.table_hover {
+	background-color: #f9f9f9;
+}
+
+table {
+  max-width: 100%;
+  background-color: transparent;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.table {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.table th,
+.table td {
+  padding: 8px;
+  line-height: 20px;
+  text-align: left;
+  vertical-align: top;
+  border-top: 1px solid #dddddd;
+}
