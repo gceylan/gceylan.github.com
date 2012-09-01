@@ -4,7 +4,7 @@ title: ubuntu - java kurulumu
 ---
 
 Merhaba. Sözü uzatmadan doğrudan Java kurulumuna geçiyorum.
-İşe Javayı Oracle' ın resmi sitesinden indirmekle başlıyoruz. [Bu adrese](http://www.oracle.com/technetwork/java/javase/downloads/java-se-jdk-7-download-432154.html) gidelim. `Accept License Agreement` seçenegini seçelim. Daha sonra sisteminize uygun(?32 - ?64) `.tar.gz` uzantılı JDK(Java Development Kit)yı seçerek indirmeye başlayalım.
+İşe Javayı Oracle' ın resmi sitesinden indirmekle başlıyoruz. [Bu adrese](http://www.oracle.com/technetwork/java/javase/downloads/java-se-jdk-7-download-432154.html) gidelim. `Accept License Agreement` seçenegini seçelim. Daha sonra sisteminize uygun(32 bit || 64 bit) `.tar.gz` uzantılı JDK(Java Development Kit)yı seçerek indirmeye başlayalım.
 
 Masaüstüne `java` isminde bir dizin oluşturalım ve indirdiğimiz JDK paketini bu
 dizinin içine atalı. Daha sonra yeni bir uçbirim açalım ve sırasıyla aşağıdaki komutları uygulayalım:
