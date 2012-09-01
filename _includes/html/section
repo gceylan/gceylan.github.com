@@ -1,12 +1,11 @@
 <div id="home">
-  <ul class="posts">
+  <table class="table">
     {% capture section %}{{ page.section }}{% endcapture %}
     {% for post in site.categories[section] %}
-      <li>
-	<span>{{ post.date | date: '%Y-%m-%d' }}</span>
-	&nbsp;&raquo;&nbsp;&nbsp;
-	<a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
-      </li>
+      <tr>
+		<td><span>{{ post.date | date: '%Y-%m-%d' }}</span></td>
+		<td><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></td>
+      </tr>
     {% endfor %}
-  </ul>
+  </table>
 </div>
