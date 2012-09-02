@@ -8,14 +8,14 @@ Merhaba. Sözü uzatmadan doğrudan Java kurulumuna geçiyorum.
 
 Masaüstüne `java` isminde bir dizin oluşturalım ve indirdiğimiz JDK paketini bu
 dizinin içine atalı. Daha sonra yeni bir uçbirim açalım ve sırasıyla aşağıdaki komutları uygulayalım:
-
-	$ cd ~/Masaüstü/java
-	$ tar xvf jdk*
-	$ sudo mv jdk1.7.0/ /usr/lib/jvm/
-	$ sudo update-alternatives --install "/usr/bin/java" "java" "/usr/lib/jvm/jdk1.7.0/bin/java" 1
-	$ sudo update-alternatives --install "/usr/bin/javac" "javac" "/usr/lib/jvm/jdk1.7.0/bin/javac" 1
-	$ sudo update-alternatives --install "/usr/bin/javaws" "javaws" "/usr/lib/jvm/jdk1.7.0/bin/javaws" 1
-
+<pre><code class="no-highlight">
+$ cd ~/Masaüstü/java
+$ tar xvf jdk*
+$ sudo mv jdk1.7.0/ /usr/lib/jvm/
+$ sudo update-alternatives --install "/usr/bin/java" "java" "/usr/lib/jvm/jdk1.7.0/bin/java" 1
+$ sudo update-alternatives --install "/usr/bin/javac" "javac" "/usr/lib/jvm/jdk1.7.0/bin/javac" 1
+$ sudo update-alternatives --install "/usr/bin/javaws" "javaws" "/usr/lib/jvm/jdk1.7.0/bin/javaws" 1
+</code></pre>
 Kurulum tamamlandı. Şimdi Java 7 sürümünü kullanmak için yapılandırmalıyız.
 Aşağıdaki komutu girelim ve `jdk1.7.0` olan seçimi seçip entere basalım.
 
@@ -35,8 +35,8 @@ olmalıyız:
 
 Önce tüm eklentileri kaldıralım:
 
-	$ rm -f ~/.mozilla/plugins/libnpjp2.so ~/.mozilla/plugins/libjavaplugin_oji.so
-	$ sudo rm -f /usr/lib/firefox/plugins/libnpjp2.so /usr/lib/firefox/plugins/libjavaplugin_oji.so
+$ rm -f ~/.mozilla/plugins/libnpjp2.so ~/.mozilla/plugins/libjavaplugin_oji.so
+$ sudo rm -f /usr/lib/firefox/plugins/libnpjp2.so /usr/lib/firefox/plugins/libjavaplugin_oji.so
 
 Şimdi yenilerini kuralım:
 
