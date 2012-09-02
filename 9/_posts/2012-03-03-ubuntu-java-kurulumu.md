@@ -34,21 +34,21 @@ olmalıyız:
 **Tarayıcılar için ek adımlar**
 
 Önce tüm eklentileri kaldıralım:
-
+<pre><code class="no-highlight">
 $ rm -f ~/.mozilla/plugins/libnpjp2.so ~/.mozilla/plugins/libjavaplugin_oji.so
 $ sudo rm -f /usr/lib/firefox/plugins/libnpjp2.so /usr/lib/firefox/plugins/libjavaplugin_oji.so
-
+</code></pre>
 Şimdi yenilerini kuralım:
-
-	$ mkdir -p ~/.mozilla/plugins
-
+<pre><code class="no-highlight">
+$ mkdir -p ~/.mozilla/plugins
+</code></pre>
 Sisteminiz 32 bit ise:
-
-	$ ln -s /usr/lib/jvm/jdk1.7.0/jre/lib/i386/libnpjp2.so ~/.mozilla/plugins/
-
+<pre><code class="no-highlight">
+$ ln -s /usr/lib/jvm/jdk1.7.0/jre/lib/i386/libnpjp2.so ~/.mozilla/plugins/
+</code></pre>
 64 bit ise:
-
-	$ ln -s /usr/lib/jvm/jdk1.7.0/jre/lib/amd64/libnpjp2.so ~/.mozilla/plugins/
-
+<pre><code class="no-highlight">
+$ ln -s /usr/lib/jvm/jdk1.7.0/jre/lib/amd64/libnpjp2.so ~/.mozilla/plugins/
+</code></pre>
 Bu kadar yükleme yaptıktan sonra ilk java uygulamsını yapmadan gitmek olmaz.
 [Buradan buyrun.](http://gceylan.github.com/903/ilk-java/)
