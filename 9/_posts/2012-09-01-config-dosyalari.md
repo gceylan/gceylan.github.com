@@ -17,6 +17,8 @@ Java' da config dosyaları `java.util.Properties` sınıfı kullanılarak hazır
 
 **Örnek Java Config dosyası hazırlama**
 
+<pre><code class="java">
+
 	package com.gceylan.simleconfigfileexample;
 
 	import java.io.FileInputStream;
@@ -113,5 +115,6 @@ Java' da config dosyaları `java.util.Properties` sınıfı kullanılarak hazır
 		}
 
 	}
+</code></pre>
 	
 **Not:**Yukarıdaki örneğin [kaynak kodları](https://github.com/gceylan/pro-lang/tree/master/java/SimpleConfigFileExample)na linkten ulaşabilirsiniz.
