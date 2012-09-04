@@ -49,7 +49,9 @@ log4j.appender.stdout.layout.ConversionPattern=%d{ABSOLUTE} %5p %c{1}:%L - %m%n
 
 Bu dosyayı java projesinde `src` dizininin altına koymalıyız.
 
-Şu anda bu dosya log mesajlarını _**sistem konsoluna**_ ve _**log/loging.log**_ isimli bir dosyaya yazmak üzere ayarlanmıştır. Bu dosyanın boyutu 1 MB ulaştığında otomatik olarak 2. log dosyası açılacaktır. `log4j.appender.file.layout.ConversionPattern=%d{ABSOLUTE} %5p %c{1}:%L - %m%n` satırı ile tarih, saat, logun oluştuğu satır gibi bilgilerin de loga eklenmesini sağlamaktadır.
+Şu anda bu dosya log mesajlarını _**sistem konsoluna**_ ve _**log/loging.log**_ isimli bir dosyaya yazmak üzere ayarlanmıştır.
+Bu dosyanın boyutu 1 MB ulaştığında otomatik olarak 2. log dosyası açılacaktır.
+`log4j.appender.file.layout.ConversionPattern=%d{ABSOLUTE} %5p %c{1}:%L - %m%n` satırı ile tarih, saat, logun oluştuğu satır gibi bilgilerin de loga eklenmesini sağlamaktadır.
 
 `log4j.rootLogger` ayarı **OFF** yapılarak loglama iptal edilebilir ya da **ALL** yapılarak tüm tüm seviyelerdeki loglar izlenebilir.
 
@@ -61,23 +63,24 @@ import org.apache.log4j.Logger;
 
 public class Log4jExample {
 
-	private static final Logger logger = Logger.getLogger(Log4jExample.class);
+    private static final Logger logger = Logger.getLogger(Log4jExample.class);
+
+    public static void main(String[] args) {
+
+	logger.info("STARTED!");
 	
-	public static void main(String[] args) {
-		
-		logger.info("STARTED!");
-		
-		logger.trace("Trace");
-		logger.debug("Debug");
-		logger.info("Info");
-		logger.warn("Warn");
-		logger.error("Error");
-		logger.fatal("Fatal");
-		
-		logger.info("FINISHED!");
-	}
+	logger.trace("Trace");
+	logger.debug("Debug");
+	logger.info("Info");
+	logger.warn("Warn");
+	logger.error("Error");
+	logger.fatal("Fatal");
+
+	logger.info("FINISHED!");
+    }
 
 }
 </code></pre>
 
-**Diğer Faydaları:** Örneğin, kod çerisinde bulunan `system.out.println` leri kaldırmak için koda müdehale etmek gerekir. `Sysout` sistem kaynaklarını kullanarak sistem log dosyasına yazar. Her yazım işleminde `I/O` yapar. log4j kadar performanslı değildir. İstenildiği zaman kapatılamaz.
+**Diğer Faydaları:** Örneğin, kod çerisinde bulunan `system.out.println` leri kaldırmak için koda müdehale etmek gerekir.
+`Sysout` sistem kaynaklarını kullanarak sistem log dosyasına yazar. Her yazım işleminde `I/O` yapar. log4j kadar performanslı değildir. İstenildiği zaman kapatılamaz.
