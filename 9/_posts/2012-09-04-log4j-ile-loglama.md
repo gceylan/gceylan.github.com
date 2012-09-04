@@ -56,30 +56,33 @@ Bu dosyanın boyutu 1 MB ulaştığında otomatik olarak 2. log dosyası açıla
 `log4j.rootLogger` ayarı **OFF** yapılarak loglama iptal edilebilir ya da **ALL** yapılarak tüm tüm seviyelerdeki loglar izlenebilir.
 
 **Basit bir java programı ve log4j:**
+
 <pre><code class="java">
+
 package com.gceylan.log4jexample;
 
 import org.apache.log4j.Logger;
 
 public class Log4jExample {
 
-    private static final Logger logger = Logger.getLogger(Log4jExample.class);
+	private static final Logger logger = Logger.getLogger(Log4jExample.class);
 
-    public static void main(String[] args) {
+	public static void main(String[] args) {
 
-	logger.info("STARTED!");
-	
-	logger.trace("Trace");
-	logger.debug("Debug");
-	logger.info("Info");
-	logger.warn("Warn");
-	logger.error("Error");
-	logger.fatal("Fatal");
+		logger.info("STARTED!");
 
-	logger.info("FINISHED!");
-    }
+		logger.trace("Trace");
+		logger.debug("Debug");
+		logger.info("Info");
+		logger.warn("Warn");
+		logger.error("Error");
+		logger.fatal("Fatal");
+
+		logger.info("FINISHED!");
+	}
 
 }
+
 </code></pre>
 
 **Diğer Faydaları:** Örneğin, kod çerisinde bulunan `system.out.println` leri kaldırmak için koda müdehale etmek gerekir.
