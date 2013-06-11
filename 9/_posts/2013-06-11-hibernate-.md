@@ -45,7 +45,8 @@ Bağlantı alma işlemi (connection), kurumsal uygulamalarda en pahalı(maliyetl
 	account tablosu ACCOUNT_ID(BIGINT), ACCOUNT_TYPE(VARCHAR(200)), CREATION_TYPE(TIMESTAMP) ve BALANCE(BIGINT) hücrelerinden oluşsun.
 
  Account sınıfımız aşağıdaki gibidir:
-<pre><code class="java">public class Account {
+<pre><code class="java">
+public class Account {
 	
 	public static final String ACCOUNT_TYPE_SAVINGS = "SAVINGS";
 	public static final String ACCOUNT_TYPE_CHECKING = "CHECKING";
@@ -128,7 +129,8 @@ Aşağıda da gördüğünüz gibi Account sınıfının tüm nesne değişkenle
 	</hibernate-mapping>
 
 AccountDAO sınıfı aşağıdaki gibidir:
-<pre><code class="java">public class AccountDAO {
+<pre><code class="java">
+public class AccountDAO {
 	
 	public void saveOrUpdateAccount(Account account) {
 		Session session = HibernateUtil.getSessionFactory().getCurrentSession();
@@ -152,7 +154,8 @@ AccountDAO sınıfı aşağıdaki gibidir:
 </code></pre>
 
 AccountService sınıfı:
-<pre><code class="java">public class AccountService {
+<pre><code class="java">
+public class AccountService {
 	
 	AccountDAO accountDAO = new AccountDAO();
 	
@@ -171,7 +174,8 @@ AccountService sınıfı:
 </code></pre>
 
 HibernateUtil sınıfı:
-<pre><code class="java">public class HibernateUtil {
+<pre><code class="java">
+public class HibernateUtil {
 	private static final SessionFactory sessionFactory;
 	
 	static {
@@ -222,7 +226,8 @@ hibernate.cfg.xml dosyası aşağıdaki gibidir. Burada veritabını connection 
 
 projeyi oluşturduktan sonra, proje üzerinde sağ tıklayıp properties > java build path > add library tıklayıp, JUnit' i seçerek test için gerekli jarları projeye dahil edebilirsiniz. İsterseniz kendiniz bir main bloğu yazarak da test edebilirsini 
 
-<pre><code class="java">public class MyJUnitTest extends TestCase {
+<pre><code class="java">
+public class MyJUnitTest extends TestCase {
 	
 	@Test
 	public void testCreateAccount() {
