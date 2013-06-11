@@ -1,4 +1,4 @@
-*---
+---
 layout: post
 title: hibernate
 ---
@@ -255,4 +255,4 @@ public class MyJUnitTest extends TestCase {
 }
 </code></pre>
 
-örnek uygulamanın kaynak kodları _**[githubtadır.](https://github.com/gceylan/pro-lang/tree/master/java/SimpleHibernateExample)**_*
+örnek uygulamanın kaynak kodları _**[githubtadır.](https://github.com/gceylan/pro-lang/tree/master/java/SimpleHibernateExample)**_
