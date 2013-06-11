@@ -1,4 +1,4 @@
----
+*---
 layout: post
 title: hibernate
 ---
@@ -46,61 +46,61 @@ Bağlantı alma işlemi (connection), kurumsal uygulamalarda en pahalı(maliyetl
 
  Account sınıfımız aşağıdaki gibidir:
 <pre><code class="java">
-public class Account {
-	
-	public static final String ACCOUNT_TYPE_SAVINGS = "SAVINGS";
-	public static final String ACCOUNT_TYPE_CHECKING = "CHECKING";
-	
-	private long accountId;
-	private String accountType;
-	private Date creationDate;
-	private double balance;
-	
-	public long getAccountId() {
-		return accountId;
-	}
-	
-	public void setAccountId(long accountId) {
-		this.accountId = accountId;
-	}
-	
-	public String getAccountType() {
-		return accountType;
-	}
-	
-	public void setAccountType(String accountType) {
-		this.accountType = accountType;
-	}
-	
-	public Date getCreationDate() {
-		return creationDate;
-	}
-	
-	public void setCreationDate(Date creationDate) {
-		this.creationDate = creationDate;
-	}
-	
-	public double getBalance() {
-		return balance;
-	}
-	
-	public void setBalance(double balance) {
-		this.balance = balance;
-	}
-	
-	public String toString() {
-		StringBuffer sb = new StringBuffer(512);
+	public class Account {
 		
-		sb.append("\n----ACCOUNT----\n");
-		sb.append("accountId=" + accountId + "\n");
-		sb.append("accountType=" + accountType + "\n");
-		sb.append("creationDate=" + creationDate + "\n");
-		sb.append("balance=" + balance + "\n");
-		sb.append("----ACCOUNT----\n");
+		public static final String ACCOUNT_TYPE_SAVINGS = "SAVINGS";
+		public static final String ACCOUNT_TYPE_CHECKING = "CHECKING";
 		
-		return sb.toString();
+		private long accountId;
+		private String accountType;
+		private Date creationDate;
+		private double balance;
+		
+		public long getAccountId() {
+			return accountId;
+		}
+		
+		public void setAccountId(long accountId) {
+			this.accountId = accountId;
+		}
+		
+		public String getAccountType() {
+			return accountType;
+		}
+		
+		public void setAccountType(String accountType) {
+			this.accountType = accountType;
+		}
+		
+		public Date getCreationDate() {
+			return creationDate;
+		}
+		
+		public void setCreationDate(Date creationDate) {
+			this.creationDate = creationDate;
+		}
+		
+		public double getBalance() {
+			return balance;
+		}
+		
+		public void setBalance(double balance) {
+			this.balance = balance;
+		}
+		
+		public String toString() {
+			StringBuffer sb = new StringBuffer(512);
+			
+			sb.append("\n----ACCOUNT----\n");
+			sb.append("accountId=" + accountId + "\n");
+			sb.append("accountType=" + accountType + "\n");
+			sb.append("creationDate=" + creationDate + "\n");
+			sb.append("balance=" + balance + "\n");
+			sb.append("----ACCOUNT----\n");
+			
+			return sb.toString();
+		}
 	}
-}
 </code></pre>
 
 Account classı ile veritabanındaki account tablosunu eşleyen(mapping) .xml dosyası aşağıdaki gibidir. Bu dosya normal java classlarının üst dizininde olmalıdır.
@@ -130,69 +130,69 @@ Aşağıda da gördüğünüz gibi Account sınıfının tüm nesne değişkenle
 
 AccountDAO sınıfı aşağıdaki gibidir:
 <pre><code class="java">
-public class AccountDAO {
-	
-	public void saveOrUpdateAccount(Account account) {
-		Session session = HibernateUtil.getSessionFactory().getCurrentSession();
+	public class AccountDAO {
 		
-		// Remember the number of LOC needed to do this with JDBC?
-		session.saveOrUpdate(account);
-	}
-	
-	public Account getAccount(long accountId) {
-		Session session = HibernateUtil.getSessionFactory().getCurrentSession();
-		Account account = (Account) session.get(Account.class, accountId);
+		public void saveOrUpdateAccount(Account account) {
+			Session session = HibernateUtil.getSessionFactory().getCurrentSession();
+			
+			// Remember the number of LOC needed to do this with JDBC?
+			session.saveOrUpdate(account);
+		}
 		
-		return account;
+		public Account getAccount(long accountId) {
+			Session session = HibernateUtil.getSessionFactory().getCurrentSession();
+			Account account = (Account) session.get(Account.class, accountId);
+			
+			return account;
+		}
+		
+		public void deleteAccount(Account account) {
+			Session session = HibernateUtil.getSessionFactory().getCurrentSession();
+			session.delete(account);
+		}
 	}
-	
-	public void deleteAccount(Account account) {
-		Session session = HibernateUtil.getSessionFactory().getCurrentSession();
-		session.delete(account);
-	}
-}
 </code></pre>
 
 AccountService sınıfı:
 <pre><code class="java">
-public class AccountService {
-	
-	AccountDAO accountDAO = new AccountDAO();
-	
-	public void saveOrUpdateAccount(Account account) {
-		accountDAO.saveOrUpdateAccount(account);
+	public class AccountService {
+		
+		AccountDAO accountDAO = new AccountDAO();
+		
+		public void saveOrUpdateAccount(Account account) {
+			accountDAO.saveOrUpdateAccount(account);
+		}
+		
+		public Account getAccount(long accountId) {
+			return accountDAO.getAccount(accountId);
+		}
+		
+		public void deleteAccount(Account account) {
+			accountDAO.deleteAccount(account);
+		}
 	}
-	
-	public Account getAccount(long accountId) {
-		return accountDAO.getAccount(accountId);
-	}
-	
-	public void deleteAccount(Account account) {
-		accountDAO.deleteAccount(account);
-	}
-}
 </code></pre>
 
 HibernateUtil sınıfı:
 <pre><code class="java">
-public class HibernateUtil {
-	private static final SessionFactory sessionFactory;
-	
-	static {
-		try {
-			// Create the SessionFactory from hibernate.cfg.xml
-			// SessionFactory is thread-safe (Singleton for the entire application)
-			sessionFactory = new Configuration().configure().buildSessionFactory();
-		} catch (Throwable ex) {
-			System.err.println("Initial SessionFactory creation failed." + ex);
-			throw new ExceptionInInitializerError(ex);
+	public class HibernateUtil {
+		private static final SessionFactory sessionFactory;
+		
+		static {
+			try {
+				// Create the SessionFactory from hibernate.cfg.xml
+				// SessionFactory is thread-safe (Singleton for the entire application)
+				sessionFactory = new Configuration().configure().buildSessionFactory();
+			} catch (Throwable ex) {
+				System.err.println("Initial SessionFactory creation failed." + ex);
+				throw new ExceptionInInitializerError(ex);
+			}
+		}
+		
+		public static SessionFactory getSessionFactory() {
+			return sessionFactory;
 		}
 	}
-	
-	public static SessionFactory getSessionFactory() {
-		return sessionFactory;
-	}
-}
 </code></pre>
 
 hibernate.cfg.xml dosyası aşağıdaki gibidir. Burada veritabını connection stringi ve veritabanı bağlantısı için gerekli bilgiler bulunmaktadır. Tüm mappingler bu dosyada belirtilmek zorundadır.
@@ -255,4 +255,4 @@ public class MyJUnitTest extends TestCase {
 }
 </code></pre>
 
-örnek uygulamanın kaynak kodları _**[githubtadır.](https://github.com/gceylan/pro-lang/tree/master/java/SimpleHibernateExample)**_
+örnek uygulamanın kaynak kodları _**[githubtadır.](https://github.com/gceylan/pro-lang/tree/master/java/SimpleHibernateExample)**_*
