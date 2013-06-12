@@ -196,8 +196,7 @@ pre .input_number,
 pre .markdown .link_label,
 pre .vhdl .attribute,
 pre .clojure .attribute {
-  color:#30F;
-  color:#FFF;
+  color:#000;
 }
 
 pre .keyword,
