@@ -4,7 +4,7 @@ title: eclipse - github plugin
 ---
 
 
-GitHub' da kod incelerken `Eclipse GitHub Plugin 2.0 Released` diye bir link gördüm. Hemen tıklayıp içriğe baktım ve GitHub' a Eclipse ile proje gönderilebileceğini öğrendim. Hemen nasıl kurulup kullanılabileceğini araştırdım ve bu iletimde bu işleri nasıl yaptığımı anlatmak için hazırladım. Şimdi yavaş yavaş kuruluma geçelim.
+GitHub' da kod incelerken `Eclipse GitHub Plugin 2.0 Released` diye bir link gördüm. Hemen tıklayıp içeriğe baktım ve GitHub' a Eclipse ile proje gönderilebileceğini öğrendim. Hemen nasıl kurulup kullanılabileceğini araştırdım ve bu iletimde bu işleri nasıl yaptığımı anlatmak için hazırladım. Şimdi yavaş yavaş kuruluma geçelim.
 
 İlk olarak Eclipse GitHub' ı tanıtmakla başlıyoruz:
 Eclipse açalım. Menüden `Help -> Install New Software` seçelim. Gelen Ekrandan sağ üstteki `Add` butonuna tıklayalım. Gelen ekranda `Location` kısmına `http://download.eclipse.org/releases/juno` adresini yazalım. `Name` kısmına da `Eclipse GitHub Plugin` şeklinde bir isim verebiliriz.
